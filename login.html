@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morango Mania</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="images/Logo.png" />
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: system-ui;
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+      }
+
+      .logo {
+        width: 250px;
+        margin-left: 20px;
+      }
+
+      header {
+        background-color: #fffef0;
+      }
+
+      body {
+        width: 100%;
+        height: 100%;
+        background-image: url(images/Fundo\ 2.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden;
+      }
+
+      .main__container {
+        background-color: purple;
+        height: 60vh;
+        width: 80%;
+        border-radius: 25px;
+        overflow: hidden;
+        box-shadow: -35px 35px 5px rgba(0, 0, 0, 0.575);
+        display: flex;
+      }
+
+      .main__cor {
+        background-color: rgb(255, 105, 105);
+        width: 38%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .fa-user {
+        font-size: 18vh;
+        color: rgb(49, 49, 49);
+        background-color: rgb(255, 254, 240);
+        border-radius: 25px;
+        padding: 6vh;
+      }
+
+      .main__form {
+        height: 100%;
+        width: 62%;
+        background-color: rgb(255, 254, 240);
+      }
+
+        .main__h1 {
+            padding: 12px 20px;
+        }
+
+        .main__p {
+            padding-left: 20px;
+            margin-top: 40px;
+        }
+
+
+        .input-box {
+            margin: 15px;
+            display:flex;
+            flex-direction: column;
+        }
+
+        .input__cpf{
+            margin-bottom: 15px;
+        }
+
+        .input {
+            border: none;
+            border-radius: 5px;
+            padding: 6px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <header>
+      <a href="index.html" target="_blank"
+        ><img class="logo" src="images/Logo M Mania 2.png"
+      /></a>
+    </header>
+
+    <main>
+      <div class="main__container">
+        <div class="main__cor">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="main__form">
+          <h1 class="main__h1">Login</h1>
+          <p class="main__p">Digite seu CPF e Senha:</p>
+          <div class="input-box">
+            <input class="input__cpf input" type="number" placeholder="Ex. 123.456.789-00" required />
+            <input class="input__senha input" type="text" placeholder="Digite sua senha" required />
+          </div>
+          <button>Entrar</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
