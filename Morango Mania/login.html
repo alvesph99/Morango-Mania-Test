@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" href="images/Logo.png" />
+    <link rel="icon" href="assets/images/Logo.png" />
     <link rel="stylesheet" href="assets/css/login.css" />
   </head>
   <body>
@@ -28,31 +28,33 @@
           <i class="fa-solid fa-user"></i>
         </div>
         <div class="main__login">
-          <h1 class="main__h1">Login</h1>
-          <div class="input-box">
+          <h1 class="main__h1"><span class="underline">Log</span>in</h1>
+          <form class="input-box">
             <label for="number" class="input__label">Insira seu CPF</label>
             <input
+              id="number"
               class="input__cpf input"
               type="number"
               placeholder="Ex. 123.456.789-00"
               required
             />
-            <label for="number" class="input__label">Insira sua senha</label>
-            <form class="password-form">
+            <label for="password" class="input__label">Insira sua senha</label>
+            <div class="password-form">
               <input
+                id="password"
                 class="input__senha input"
-                type="text"
+                type="password"
                 placeholder="Digite sua senha"
                 required
               />
               <button class="button__icon">
                 <i class="fa-regular fa-eye-slash"></i>
               </button>
-            </form>
-          </div>
-          <div class="container__button">
-            <button class="main__button">Entrar</button>
-          </div>
+            </div>
+            <div class="container__button">
+              <button type="submit" class="main__button">Entrar</button>
+            </div>
+          </form>
         </div>
       </div>
     </main>

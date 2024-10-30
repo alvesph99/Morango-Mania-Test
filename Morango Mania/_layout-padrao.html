@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Usuário</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="assets/images/Logo.png" />
+    <link rel="stylesheet" href="assets/css/_layout-padrao.css" />
+  </head>
+
+  <div class="bg"></div>
+  <header>
+    <a href="index.html" target="_blank"
+      ><img class="logo" src="assets/images/Logo M Mania 2.png"
+    /></a>
+  </header>
+
+  <main>
+    <div class="main__container">
+      <div class="main__conteudo">
+        <div class="main__h1">
+          <button class="button__voltar">
+            <a href="index.html">
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+          </button>
+          <h1><span class="underline">Cadas</span>tro de Usuário</h1>
+        </div>
+        <form class="input__box">
+          <div class="input__wrapper">
+            <div class="wrapper">
+              <label for="name" class="input__label">Nome Completo *</label>
+              <input
+                class="input__cpf input"
+                type="text"
+                id="name"
+                name="nome"
+                placeholder="Digite seu nome completo"
+                required
+              />
+            </div>
+
+            <div class="wrapper">
+              <label for="number" class="input__label">CPF *</label>
+              <input
+                class="input__cpf input"
+                type="number"
+                id="number"
+                name="cpf"
+                placeholder="Ex. 123.456.789-00"
+                required
+                min="0"
+              />
+            </div>
+            <div class="wrapper">
+              <label for="email" class="input__label">Email *</label>
+              <input
+                class="input__cpf input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite seu email"
+                required
+              />
+            </div>
+
+            <div class="wrapper">
+              <label for="password" class="input__label">Senha *</label>
+
+              <input
+                class="input"
+                type="password"
+                id="password"
+                name="senha"
+                placeholder="Digite sua senha"
+                required
+                maxlength="12"
+              />
+            </div>
+          </div>
+          <div class="container__button">
+            <button type="submit" class="main__button button__enviar">
+              Cadastrar
+            </button>
+            <button type="reset" class="main__button button__cancelar">
+              Cancelar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</html>

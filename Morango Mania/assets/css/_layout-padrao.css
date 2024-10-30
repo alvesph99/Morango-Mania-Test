@@ -5,6 +5,13 @@
   font-family: system-ui;
 }
 
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
 body {
   height: 100vh;
   background-color: aqua;
@@ -39,6 +46,7 @@ main {
   height: 600px;
   width: 80%;
   max-width: 1400px;
+  min-width: 800px;
   margin: 0 20px;
   border-radius: 25px;
   overflow: hidden;
@@ -46,29 +54,12 @@ main {
   display: flex;
 }
 
-.main__cor {
-  background-color: rgb(255, 105, 105);
-  width: 38%;
+.main__conteudo {
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.fa-user {
-  font-size: 12em;
-  color: rgb(49, 49, 49);
-  background-color: rgb(255, 254, 240);
-  border-radius: 25px;
-  padding: 0.4em;
-}
-
-.main__login {
-  height: 100%;
-  width: 62%;
+  width: 100%;
   background-color: rgb(255, 254, 240);
   position: relative;
-  padding: 0 60px;
+  padding: 0 20px;
 }
 
 .main__h1 {
@@ -76,21 +67,43 @@ main {
   margin-bottom: 36px;
   padding: 12px 0;
   color: rgb(49, 49, 49);
+  display: flex;
+  align-items: center;
 }
 
 .underline {
   text-decoration: underline rgb(49, 49, 49);
-  text-underline-offset: 0.5em;
+  text-underline-offset: 0.6em;
 }
 
-.input-box {
+.button__voltar {
+  border-radius: 50%;
+}
+
+.fa-arrow-left {
+  background-color: rgb(49, 49, 49);
+  padding: 10px;
+  clip-path: circle(48%);
+  color: rgb(255, 254, 240);
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.input__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.input__box {
   margin: 15px 0;
+}
+
+.wrapper {
   display: flex;
   flex-direction: column;
-}
-
-.input__cpf {
-  margin-bottom: 15px;
+  min-width: 340px;
 }
 
 .input {
@@ -98,22 +111,8 @@ main {
   border-radius: 5px;
   padding: 12px;
   background-color: rgb(255, 254, 240);
-}
-
-.input__senha {
-  border: none;
   outline: none;
-  width: 100%;
-  background-color: transparent;
-}
-
-.password-form {
-  border: rgb(114, 114, 114) solid 2px;
-  border-radius: 5px;
-  padding-right: 15px;
-  background-color: rgb(255, 254, 240);
-  display: flex;
-  justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .input__label {
@@ -133,22 +132,38 @@ main {
   border: none;
   font-size: 20px;
   font-weight: bolder;
-  background-color: rgb(255, 105, 105);
-  color: rgb(255, 254, 240, 1);
   cursor: pointer;
   padding: 8px 23px;
   border-radius: 10px;
   transition: all 0.3s ease 0s;
+  /* position: absolute;
+    right: 30px;
+    bottom: 30px; */
+}
+
+.container__button {
+  display: flex;
+  flex-direction: row-reverse;
   position: absolute;
   right: 30px;
   bottom: 30px;
 }
 
-.fa-eye-slash {
-  color: rgb(53, 53, 53);
-  font-size: 20px;
+.button__enviar {
+  background-color: rgb(255, 105, 105);
+  color: rgb(255, 254, 240, 1);
 }
 
-.main__button:hover {
+.button__cancelar {
+  background-color: rgb(65, 65, 65);
+  color: rgb(255, 254, 240, 1);
+  margin-right: 14px;
+}
+
+.button__cancelar:hover {
+  background-color: rgba(65, 65, 65, 0.8);
+}
+
+.button__enviar:hover {
   background-color: rgba(255, 105, 105, 0.8);
 }
